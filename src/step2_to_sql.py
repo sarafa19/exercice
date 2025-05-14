@@ -62,9 +62,8 @@ def insert_into_mysql(data, host, user, password, db, port=3307):
             date DATE
         );
     """)
-    print("Table `news_staging` vérifiée/créée avec succès.")
+    print("Table `news_staging` vérifiée avec succès.")
 
-    print(f"Début de l'insertion des {len(data)} éléments...")
     print(f"Début de l'insertion des {len(data)} éléments...")
     for i, item in enumerate(data, start=1):
             try:
